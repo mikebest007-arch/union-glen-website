@@ -116,9 +116,18 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23C9A962" stroke-width="0.5" opacity="0.1"/></svg>');
-            background-size: 300px;
-            animation: float 20s ease-in-out infinite;
+            background: url('images/renderings/exterior-1.jpg') center/cover no-repeat;
+            opacity: 0.4;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(26,26,26,0.8) 0%, rgba(45,45,45,0.6) 100%);
         }
 
         @keyframes float {
@@ -874,27 +883,27 @@
             </div>
             
             <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
-                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark) 100%); display: flex; align-items: center; justify-content: center;">
-                    <div style="text-align: center; color: white; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🏘️</div>
-                        <h4 style="color: var(--gold-light);">Exterior Rendering</h4>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Modern Townhome Facade</p>
+                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                    <img src="images/renderings/exterior-1.jpg" alt="Modern Townhome Exterior" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1rem 1rem;">
+                        <h4 style="color: var(--gold-light); margin: 0;">Modern Townhome Facade</h4>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin: 0.5rem 0 0;">By Deco Homes</p>
                     </div>
                 </div>
                 
-                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark) 100%); display: flex; align-items: center; justify-content: center;">
-                    <div style="text-align: center; color: white; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🌳</div>
-                        <h4 style="color: var(--gold-light);">Site Rendering</h4>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Community Overview</p>
+                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                    <img src="images/renderings/exterior-2.jpg" alt="Townhome Exterior Rendering" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1rem 1rem;">
+                        <h4 style="color: var(--gold-light); margin: 0;">Elegant Townhome Design</h4>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin: 0.5rem 0 0;">By Arista Homes</p>
                     </div>
                 </div>
                 
-                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark) 100%); display: flex; align-items: center; justify-content: center;">
-                    <div style="text-align: center; color: white; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🏠</div>
-                        <h4 style="color: var(--gold-light);">Interior Rendering</h4>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Spacious Modern Living</p>
+                <div class="gallery-item" style="position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 16/9;">
+                    <img src="images/renderings/exterior-3.jpg" alt="Townhome Community Rendering" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 2rem 1rem 1rem;">
+                        <h4 style="color: var(--gold-light); margin: 0;">Community Living</h4>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin: 0.5rem 0 0;">By Opus Homes</p>
                     </div>
                 </div>
             </div>
